@@ -26,9 +26,9 @@ public class SplashActivity extends AppCompatActivity {
                 Intent i ;
                 SharedPreferences sharedPreferences = getSharedPreferences("S1",MODE_PRIVATE);
                 if(sharedPreferences.getString("EMAIL","").equals("")) {
-                   i = new Intent(SplashActivity.this, LoginNew.class);
+                   i = new Intent(SplashActivity.this, BrowserGalleryOpen.class);
                 } else {
-                   i = new Intent(SplashActivity.this, NavActivity.class);
+                   i = new Intent(SplashActivity.this, BrowserGalleryOpen.class);
                 }
                 startActivity(i);
                 finish(); //used not to go back to that page

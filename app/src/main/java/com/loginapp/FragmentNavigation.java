@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FragmentNavigation extends AppCompatActivity {
+public class    FragmentNavigation extends AppCompatActivity {
 
     private Button btn1;
     private Button btn2;

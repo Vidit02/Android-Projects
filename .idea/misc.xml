@@ -76,6 +76,9 @@
         <entry key="..\:/Computer/Android/LoginApp/app/src/main/res/menu/isnta_menu.xml" value="0.12894736842105264" />
         <entry key="..\:/Computer/Android/LoginApp/app/src/main/res/menu/item_menu.xml" value="0.12894736842105264" />
         <entry key="..\:/Computer/Android/LoginApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12152777777777778" />
+        <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/activity_browser_gallery_open.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/activity_custom_grid_view.xml" value="0.19572368421052633" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.19572368421052633" />
         <entry key="app/src/main/res/layout/activity_instagram.xml" value="0.19572368421052633" />
         <entry key="app/src/main/res/layout/activity_linearlayout.xml" value="0.19572368421052633" />

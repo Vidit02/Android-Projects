@@ -5,25 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BottomNavigation">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#71ADDC"
-        android:id="@+id/toolbar"
-        app:title="My App"
-        />
+        app:title="My App" />
+
     <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frame_layout"
-        android:layout_marginVertical="?attr/actionBarSize"
-        />
+        android:layout_marginVertical="?attr/actionBarSize" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottom_view"
-        android:background="#D19995"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/isnta_menu"
-        />
+        android:background="#D19995"
+        app:menu="@menu/isnta_menu" />
 </RelativeLayout>

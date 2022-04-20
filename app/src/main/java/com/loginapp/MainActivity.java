@@ -1,4 +1,4 @@
-anpackage com.loginapp;
+package com.loginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
