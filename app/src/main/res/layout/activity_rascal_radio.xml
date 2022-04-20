@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RascalRadio"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:src="@drawable/ic_baseline_menu_24" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@id/topLinear"
+        android:background="#000000"
+        android:id="@+id/middleline"
+        android:layout_marginTop="-20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middleline"
+        android:id="@+id/names"
+        android:background="#DC0C0C"
+        android:orientation="vertical"
+        >
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="36dp"
+            android:text="Orrin Woodward"
+            android:textAllCaps="false"
+            android:textSize="22dp"
+            android:padding="14dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:background="@drawable/rascalbtnback"
+            />
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginBottom="36dp"
+            android:textAllCaps="false"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:text="SUBJECT SEARCH"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:background="@drawable/rascalbtnback"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:src="@drawable/rascal_radioback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/middlepane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/names"
+        android:background="#B0B2B5"
+        android:orientation="vertical">
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="56dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/viewgradient"
+            android:fontFamily="monospace"
+            android:text="ORRIN WOODWARD"
+            android:textColor="#68CF3131"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/controlsmusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/controlsback">
+
+                <ImageView
+                    android:id="@+id/likebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/backcontrol"
+                    android:padding="5dp"
+                    android:src="@drawable/thumb_rating_up_icon" />
+
+                <ImageView
+                    android:id="@+id/playbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/likebtn"
+                    android:background="@drawable/backcontrol"
+                    android:padding="10dp"
+                    android:src="@drawable/play_icon" />
+
+                <ImageView
+                    android:id="@+id/forwardbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/playbtn"
+                    android:background="@drawable/backcontrol"
+                    android:padding="5dp"
+                    android:src="@drawable/forward" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/backcontrol"
+                    android:padding="5dp"
+                    android:src="@drawable/heart" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="32dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="00:00"
+                android:textAlignment="textEnd"
+                android:textColor="#E80F0F"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="2.6"
+                android:background="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.7"
+                android:text="12:47"
+                android:textAlignment="textStart"
+                android:textColor="#E80F0F"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/middlepane"
+        android:gravity="center"
+        android:background="#3F4140">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/leaderwoback"
+            />
+    </RelativeLayout>
+</RelativeLayout>

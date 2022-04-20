@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".linearlayout"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/btn_img">
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email-Address"
+        android:background="#fff"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="right"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:buttonTint="@color/white"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Login Here"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:text="Register"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_instagram"></include>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.loginapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginApp">
+        <activity
+            android:name=".LoginNew"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavActivity"
+            android:exported="false"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.LoginApp.NoActionBar" />
+        <activity
+            android:name=".WhatsappLayout"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".FragmantBasic"
+            android:exported="false" />
+        <activity
+            android:name=".GridClickLayout"
+            android:exported="false" />
+        <activity
+            android:name=".CustomGridView"
+            android:exported="false" />
+        <activity
+            android:name=".CustomListViewLayout"
+            android:exported="false" />
+        <activity
+            android:name=".Videoview"
+            android:exported="false" />
+        <activity
+            android:name=".WebView"
+            android:exported="false" />
+        <activity
+            android:name=".ListGridSwitcher"
+            android:exported="false" />
+        <activity
+            android:name=".ListShiftView"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSeekRateValues"
+            android:exported="false" />
+        <activity
+            android:name=".SeekBarRatingBar"
+            android:exported="false" />
+        <activity
+            android:name=".BrowserGalleryOpen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginDesign2"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RascalRadio"
+            android:exported="false" />
+        <activity
+            android:name=".linearlayout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InstagramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LumiaDesign"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
