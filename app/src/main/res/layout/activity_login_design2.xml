@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginDesign2"
+    android:paddingLeft="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcm_text"
+        android:text="Welcome"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="36dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_text"
+        android:text="Signup into your Account"
+        android:layout_below="@+id/welcm_text"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/maintile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_text"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bckimg_login2">
+
+        <TextView
+            android:id="@+id/sign_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="60dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_txt"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/backempass"
+            android:drawablePadding="16dp"
+            android:drawableTint="#A9FFFFFF"
+            android:hint="First Name"
+            android:imeOptions="actionNext"
+            android:padding="20dp"
+            android:textColorHint="#A9FFFFFF" />
+
+        <EditText
+            android:id="@+id/editlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editfirstname"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/backempass"
+            android:drawablePadding="16dp"
+            android:drawableTint="#A9FFFFFF"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:padding="20dp"
+            android:textColorHint="#A9FFFFFF" />
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editlastname"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/backempass"
+            android:drawablePadding="16dp"
+            android:drawableTint="#A9FFFFFF"
+            android:hint="E-mail"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#A9FFFFFF" />
+
+        <EditText
+            android:id="@+id/editpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editemail"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:autofillHints="password"
+            android:background="@drawable/backempass"
+            android:drawablePadding="16dp"
+            android:drawableTint="#A9FFFFFF"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="#A9FFFFFF" />
+
+        <android.widget.Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpass"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="48dp"
+            android:padding="16dp"
+            android:text="Sign Up" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintile"
+        android:layout_centerHorizontal="true"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alrdyaccnt"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="@color/black"
+            android:text="Already have an Account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/alrdyaccnt"
+            android:text="Log In"
+            android:textSize="20sp"
+            android:layout_marginLeft="4sp"
+            android:textColor="#105D80"
+            android:paddingTop="12dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</RelativeLayout>
