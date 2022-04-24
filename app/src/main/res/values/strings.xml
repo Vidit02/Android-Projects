@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FireBaseDatabaseAppProject</string>
+
+    <string name="facebook_app_id">542801793901580</string>
+    <string name="fb_login_protocol_scheme">fb542801793901580</string>
+    <string name="facebook_client_token">90144fb128dc8e2286feaeb156f34939</string>
+
+
 </resources>
