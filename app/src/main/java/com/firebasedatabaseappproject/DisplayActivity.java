@@ -10,9 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.facebook.login.LoginManager;
 import com.facebook.login.widget.LoginButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -28,7 +30,10 @@ public class DisplayActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     ArrayList<PeopleModel> peopleModels;
-    LoginButton loginButton;
+//    LoginButton loginButton;
+    Button fblogoutbtn;
+    Button gitlogoutbtn;
+    FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +42,25 @@ public class DisplayActivity extends AppCompatActivity {
         peopleModels = new ArrayList<PeopleModel>();
         firebaseDatabase = FirebaseDatabase.getInstance("https://fir-databaseappproject-default-rtdb.asia-southeast1.firebasedatabase.app/");
         databaseReference = firebaseDatabase.getReference();
-        loginButton = findViewById(R.id.logoutfbbtn);
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        fblogoutbtn = findViewById(R.id.logoutfbbtn);
+        gitlogoutbtn = findViewById(R.id.logoutgitbtn);
+        fblogoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
+//                firebaseAuth.signOut();
+//                Client
+//                FirebaseAuth.getInstance().signOut();
+                LoginManager.getInstance().logOut();
                 Intent i = new Intent(DisplayActivity.this , SignInFacebook.class);
+                startActivity(i);
+                finish();
+            }
+        });
+        gitlogoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LoginManager.getInstance().logOut();
+                Intent i = new Intent(DisplayActivity.this,SignInGithub.class);
                 startActivity(i);
                 finish();
             }

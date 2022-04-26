@@ -8,11 +8,17 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.facebook.login.widget.DeviceLoginButton
+    <com.facebook.login.widget.LoginButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fbloginbtn"
-
         />
 
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login Using Facebook"-->
+<!--        android:id="@+id/fbloginbtn"-->
+<!--        android:textAllCaps="false"-->
+<!--        />-->
 </LinearLayout>

@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayActivity"
+    tools:context=".FacebookDisplayActivity"
     android:orientation="vertical"
-    android:gravity="center">
-
-    <ListView
+    android:gravity="center_horizontal">
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listvw"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/logoutfbbtn"
-        android:text="Facebook Logout btn"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/logoutgitbtn"
-        android:text="Github Logout btn"
+        android:id="@+id/fbprofileimg"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbtxt"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbbtnlogout"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FaceBook Display"
+        android:textSize="40sp"
+        />
 </LinearLayout>
