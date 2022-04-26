@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp">
         <activity
+            android:name=".NotificationDisplayActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginNew"
             android:exported="false" />
         <activity
